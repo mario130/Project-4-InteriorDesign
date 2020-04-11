@@ -23,16 +23,21 @@ nav{
     font-size: 25px;
     letter-spacing: 5px;
 }
+.title-heading a{
+    text-decoration: none;
+    color: #FFF;
+}
 
 /* Navbar list */
 nav ul{list-style-type: none;}
-nav a{
+nav li a{
     text-decoration: none;
     color: #FFF;
     display: block;
     padding: 8px 16px;
+    border-radius: 20px;
 }
-nav a:hover{
+nav li a:hover{
     background-color: #FFF;
     color: #000;
 }
@@ -74,6 +79,7 @@ hr{
 }
 .photos img:hover{
     opacity: 1;
+    transform: scale(1.05, 1.05);
 }
 
 /* Start section 2 */
@@ -86,8 +92,16 @@ hr{
 .designer{
     background-color: #f1f1f1;
     width: 100%;   
+    border-radius: 50% 50% 5px 5px;
 }
-.designer img{width: 100%;}
+.designer img{
+    width: 100%;
+    border-radius: 50% 50% 0 0;
+    transition: all .5s linear;
+}
+.designer img:hover{
+    border-radius: 10% 10% 0 0;
+}
 .designer-name{
     margin: 16px 0;
 }
@@ -148,6 +162,7 @@ input{
     padding: 8px;
     border: 1px solid #ccc;
     font-size: 20px;
+    caret-color: red;
 }
 .input-div{
     margin: 16px 0;
@@ -170,3 +185,8 @@ footer{
 }
 
 /* ENNNNNND 4hrs ^^ */
+::selection{
+    color: #FFF;
+    background-color: #F44338;
+    
+}
