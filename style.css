@@ -53,7 +53,8 @@ main{
     margin-top: 80px;
     padding: 0 16px;
 }
-.heading-1{font-size: 64px;}
+.heading-1{font-size: 64px; display: inline-block;}
+.heading-container p{margin-bottom: 50px;}
 .headings{
     font-size: 48px;
     color: #f44336;
@@ -82,7 +83,7 @@ hr{
     transform: scale(1.05, 1.05);
 }
 
-/* Start section 2 */
+/* Start designers */
 .designers-container{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -171,7 +172,7 @@ input{
     width: 100%;
     background-color: #F44338;
     color: #FFF;
-    margin-bottom: 16px;
+    margin-bottom: 32px;
     padding: 12px 24px;
 }
 
