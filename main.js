@@ -31,3 +31,22 @@ for(var i = 0 ; i < list.length ; i++){
     })
 }
 
+//prevent context :P
+document.addEventListener('contextmenu',function(e){
+    e.preventDefault()
+})
+
+//arrow up
+const arrowUp = document.getElementById('arrow-up');
+
+arrowUp.onclick = function(){
+    window.scrollTo(0,0);
+}
+
+window.onscroll = function(){
+    if(window.scrollY >= 2670){
+        arrowUp.style.visibility = 'visible'
+    }else{
+        arrowUp.style.visibility = 'hidden'
+    }
+}

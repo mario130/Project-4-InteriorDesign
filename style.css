@@ -224,3 +224,32 @@ footer{
 hr{
     border-color: #F44338;
 }
+
+/* arrow up */
+#arrow-up{
+    position: fixed;
+    right: 7px;
+    bottom: 10px;
+    cursor: pointer;
+    width: 40px;
+    opacity: 0.8;
+    visibility: hidden;
+    transition: all 0.2s ease-in ;
+}
+#arrow-up:hover{
+    transform: scale(1.25,1.25);
+}
+
+
+/* add scrollbar color */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #DDD;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgb(36, 26, 25);
+}
