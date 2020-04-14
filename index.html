@@ -6,13 +6,12 @@
     <title>project 4</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
-
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
 </head>
 <body>
     <a id="top"></a>
     <!-- Start nav -->
-    <nav>
+    <nav class="custom-clr" id="nav">
     <h3 class="title-heading">
         <a href="#"><b>Home & Interior design inc</b></a>
     </h3>    
@@ -37,35 +36,48 @@
             <a href="#contact"><b>Contact</b></a>
         </li>
     </ul>
+
+    <div class="clr-container">
+        <p>Choose a theme</p>
+        <ul>
+            <li clr="#F44338"></li>
+            <li clr="#4398db"></li>
+            <li clr="#40bb40"></li>
+            <li clr="#1f1f1b"></li>
+            <li clr="#ffab00"></li>
+            <li clr="#444400"></li>
+            <li clr="#030044"></li>
+        </ul>
+    </div>
     </nav>
     
     <!-- Start main -->
     <main>
         <div class="heading-container">
-            <h1 class="heading-1"><b>Interior Design</b></h1>
-            <h1 class="headings" id="showcase"><b>Showcase</b></h1>
-            <hr>
+            <h1 class="heading-1 animated bounceInDown"><b>Interior Design</b></h1>
+            <h1 class="headings custom-clr-headings" id="showcase"><b>Showcase</b></h1>
+            <hr class="hr">
         </div>
         <div class="photos">
-            <img src="images/1kitchenconcrete.jpg" alt="">
-            <img src="images/2atrium.jpg" alt="">
-            <img src="images/3livingroom.jpg" alt="">
-            <img src="images/4bedroom.jpg" alt="">
-            <img src="images/5diningroom.jpg" alt="">
-            <img src="images/6livingroom2.jpg" alt="">
+            <img src="images/1kitchenconcrete.jpg" alt="Kitchen pic">
+            <img src="images/2atrium.jpg" alt="Atrium pic">
+            <img src="images/3livingroom.jpg" alt="Living room pic">
+            <img src="images/4bedroom.jpg" alt="Bedroom pic">
+            <img src="images/5diningroom.jpg" alt="Dining room pic">
+            <img src="images/6livingroom2.jpg" alt="Living room pic">
         </div>
 
         <!-- Start section 2 -->
         <div class="heading-container">
-            <h1 class="headings" id="services"><b>Services</b></h1>
-            <hr>
+            <h1 class="headings custom-clr-headings" id="services"><b>Services</b></h1>
+            <hr class="hr">
             <p>We provide numerous services upon need. You can check them all down below!<br><br> lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
 
         <!-- Start designers -->
         <div class="heading-container">
-            <h1 class="headings" id="designers"><b>Designers</b></h1>
-            <hr>
+            <h1 class="headings custom-clr-headings" id="designers"><b>Designers</b></h1>
+            <hr class="hr">
             <p>The best team in the world.<br><br> We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p><br>
             <p><b>Our designers are carefully chosen</b></p>
         </div>
@@ -99,8 +111,8 @@
         <!-- start Packages -->
         <div>
             <div class="heading-container">
-                <h1 class="headings" id="packages">Packages</h1>
-                <hr>
+                <h1 class="headings custom-clr-headings" id="packages">Packages</h1>
+                <hr class="hr">
                 <p>Some text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
             </div>
             <div class="plans-container">
@@ -118,21 +130,21 @@
                 </div>
                 <div class="plans plane-2">
                     <ul>
-                        <li>Pro</li>
+                        <li id="pro-list-header">Pro</li>
                         <li>Floorplanning</li>
                         <li>40 hours support</li>
                         <li>Photography</li>
                         <li>50% furniture discount</li>
                         <li>Great deals</li>
                         <li><h2>$ 249</h2> <br><p class="designer-role">per room</p></li>
-                        <li><button class="btn btn-pro"><span>Sign Up!</span></button></li>
+                        <li><button id="btn-pro" class="btn custom-clr animated pulse infinite"><span>Sign Up!</span></button></li>
                     </ul>
                 </div>
             </div>
         </div>
         <div class="heading-container">
-            <h1 class="headings" id="contact">Contact Us</h1>
-            <hr>
+            <h1 class="headings custom-clr-headings" id="contact">Contact Us</h1>
+            <hr class="hr">
             <p class="para">Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new people!</p>
             <form action="#">
                 <div class="input-div">
@@ -147,7 +159,7 @@
                     <label for="name">Message</label>
                     <input type="text" name="message" id="message">
                 </div>
-                <button class="input-send btn">Send Message!</button>
+                <button class="btn custom-clr" id="input-send">Send Message!</button>
             </form>
         </div>
     </main>
@@ -159,5 +171,6 @@
             <span>mario.yonan.work@gmail.com</span>
         </div>
     </footer>
+    <script src="main.js"></script>
 </body>
 </html>
