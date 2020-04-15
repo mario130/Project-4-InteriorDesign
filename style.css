@@ -14,6 +14,7 @@ nav{
     height: 100%;
     color: #FFF;
     padding: 8px 16px;
+    transition: all .5s ease-in-out;
 }
 
 .title-heading{
@@ -80,12 +81,14 @@ main{
 .heading-container p{margin-bottom: 50px;}
 .headings{
     font-size: 48px;
+    transition: all .5s ease-in-out;
 }
 hr{
     margin: 20px 0;
     width: 50px;
     border: 5px solid ;
     border-radius: 4px;
+    transition: all .5s ease-in-out;
 }
 
 /* Start photos */
@@ -147,7 +150,7 @@ hr{
     background-color: #f1f1f1;
 }
 .plane-1 li:first-child{background-color: #616161;      color: #FFF;    padding: 32px 16px;        font-size: 24px;}
-.plane-2 li:first-child{background-color: #F44338;      color: #FFF;    padding: 32px 16px;        font-size: 24px;}
+.plane-2 li:first-child{background-color: #4398db;      color: #FFF;    padding: 32px 16px;        font-size: 24px;}
 .plans ul{list-style-type: none;}
 .plans li{padding: 16px;}
 .plans li:not(:first-child){border-bottom: 1px solid rgb(226, 226, 226);}
@@ -208,21 +211,21 @@ footer{
 /* ENNNNNND 4hrs ^^ */
 ::selection{
     color: #FFF;
-    background-color: #F44338;
+    background-color: #4398db;
     
 }
 
 /* Default color */
 .custom-clr{
-    background-color: #F44338;
+    background-color: #4398db;
 }
 
 .custom-clr-headings{
-    color: #F44338;
+    color: #4398db;
 }
 
 hr{
-    border-color: #F44338;
+    border-color: #4398db;
 }
 
 /* arrow up */
