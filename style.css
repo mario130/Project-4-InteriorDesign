@@ -10,11 +10,14 @@ nav{
     position: fixed;
     top: 0;
     left: 0;
-    width: 268px;
+    width: 20%;
     height: 100%;
     color: #FFF;
     padding: 8px 16px;
     transition: all .5s ease-in-out;
+}
+.nav-container{
+    height: 100%;
 }
 
 .title-heading{
@@ -31,7 +34,7 @@ nav{
 /* Navbar list */
 .nav-list {
     list-style-type: none;
-    margin-bottom: 65px;
+    /* margin-bottom: 65px;                            We need to remove this  */
 }
 .nav-list a{
     text-decoration: none;
@@ -47,18 +50,27 @@ nav{
     text-align: center;
     background-color: rgba(0,0,0,0.3);
     border-radius: 4px;
-    padding: 6px 0 0;
+    padding: 6px 0 ;
+    position: absolute;
+    bottom: 25px;
+    left: 5%;
+    right: 5%;
 }
-.clr-container ul{list-style-type: none;}
+.clr-container ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 8px;
+    text-align: center;
+    margin-left: 15px;
+    margin-right: 15px;
+}
 .clr-container li{
     width: 20px;
     height: 20px;
-    /* background-color: #000; */
     border-radius: 4px;
-    margin-right: 8px;
     display: inline-block;
     cursor: pointer;
-    margin-top: 8px;
 }
 
 nav li a:hover{
@@ -68,8 +80,8 @@ nav li a:hover{
 
 /* Start main */
 main{
-    margin-left: 340px;
-    margin-right: 40px;
+    width: 72%;
+    margin-left: 25%;
 }
 
 
@@ -202,7 +214,8 @@ input{
 /* Start footer */
 footer{
     background-color: #fbe9ff;
-    margin-left: 300px;
+    margin-left: -4%;
+    margin-right: -4%;
     padding: 23px 58px 16px;
     display: flex;
     justify-content: space-between;
