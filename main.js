@@ -128,4 +128,29 @@ function removeClass(){
 
 // finish highlighting
 
+//placeholder remove
+var placeholders = document.querySelectorAll('.input')
+
+
+placeholders[0].onmouseover = function(){
+    this.removeAttribute('placeholder')
+}
+placeholders[1].onmouseover = function(){
+    this.removeAttribute('placeholder')
+}
+placeholders[2].onmouseover = function(){
+    this.removeAttribute('placeholder')
+}
+
+placeholders[0].onmouseout = function(){
+    this.setAttribute('placeholder','Name / Surname')
+}
+placeholders[1].onmouseout = function(){
+    this.setAttribute('placeholder','Your email')
+}
+placeholders[2].onmouseout = function(){
+    this.setAttribute('placeholder','Input message here')
+}
+
 //This feature code was tiring but I will make it shorter in the future ^^
+
