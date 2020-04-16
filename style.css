@@ -104,7 +104,7 @@ main{
     transition: all .5s ease-in-out;
 }
 hr{
-    margin: 20px 0;
+    margin-bottom: 40px;
     width: 50px;
     border: 5px solid ;
     border-radius: 4px;
@@ -284,4 +284,101 @@ hr{
 
 ::-webkit-scrollbar-thumb {
     background-color: rgb(36, 26, 25);
+}
+
+@media screen and (max-width: 1023px){
+    nav{
+        visibility: hidden;
+    }
+
+    main{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .heading-container{
+        margin-top: 20px;
+    }
+
+    .top-heading{
+        margin-top: 20px;
+        width: 100%;
+        margin: 0;
+        padding: 10px 0 10px 5px;
+        border: 2px solid #4398db;
+        background-color: rgba(76, 152, 219, 0.3);
+        opacity: 0.8;
+    }
+
+    .heading-1{
+        font-size: 2rem;
+    }
+
+    .heading-container p{
+        /* check margin here */
+        margin-left: 5px;
+    }
+
+    .headings{
+        font-size: 1.5rem;
+        margin: 20px 0 0 10px;
+    }
+
+    hr{
+        margin: 0px 0 20px 10px;
+        width: 20px;
+        border: 2px solid #4398db;
+    }
+
+    .photos{
+        grid-gap: 2px;
+    }
+
+    /* Left transitions as it is */
+
+    /* designers */
+    .designers-container{
+        display: block;
+        width: 60%;
+        margin-left: 19%;
+        margin-bottom: 50px;
+    }
+
+    .designer-name{
+        margin: 8px 0 0 0;
+    }
+    .designer {margin-bottom: 40px;}
+    .designer p:nth-child(3){margin: 8px 0; padding-bottom: 8px;}
+    .designer-role{
+        padding-bottom: 0;
+    }
+    
+    
+    .designer p{margin: 0 0 15px 0;}
+
+
+    /* packages */
+    .plans-container{
+        display: block;
+    }
+
+    form{
+        margin: 0 5px 0 5px;
+    }
+
+    /* footer */
+    footer{
+        display: block;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    p{
+        font-size: 0.9rem;
+    }
+
+    footer::before{
+        content: 'Still working on media queries mobile designs, Check the desktop version';
+    }
+    
+
 }
